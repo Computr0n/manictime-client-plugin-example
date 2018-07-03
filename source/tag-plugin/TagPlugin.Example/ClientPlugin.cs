@@ -9,7 +9,7 @@ namespace TagPlugin
     [Plugin]
     public class ClientPlugin
     {
-        public static string Id = "ManicTime.TagSource.SampleTagPlugin";
+        public static string Id = "ManicTime.TagSource.TfsTagPlugin";
         public static string HiddenTagLabel = ":samplePlugin";
 
         public ClientPlugin(IPluginCommandRegistry pluginCommandRegistry, PluginContext pluginContext)

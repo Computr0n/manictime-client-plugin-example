@@ -31,3 +31,4 @@ _ReSharper*/
 
 # NuGet
 packages/
+/source/tag-plugin/.vs/TagPlugin

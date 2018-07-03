@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\installable-plugin\$(Configuration)\Plugins\Packages\ManicTime.TagSource.SampleTagPlugin\Lib\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\AppData\Local\Finkit\ManicTime\Plugins\Packages\ManicTime.TagSource.SampleTagPlugin\Lib\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -76,7 +76,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ManicTime.TFS\ManicTime.TFS.csproj">
+      <Project>{0213871d-6411-4fe9-ae79-7cf0d87ddc4f}</Project>
+      <Name>ManicTime.TFS</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(ProjectDir)PluginSpec.json" "$(TargetDir)..\PluginSpec.json"
